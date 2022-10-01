@@ -15,7 +15,11 @@ find_package(Clang REQUIRED CONFIG)
 
 # HelloWorld includes headers from LLVM and Clang - update the include paths
 # accordingly
-include_directories(SYSTEM "${LLVM_INCLUDE_DIRS};${CLANG_INCLUDE_DIRS}")
+message(STATUS "${LLVM_INCLUDE_DIRS};${CLANG_INCLUDE_DIRS}")
+#include_directories(SYSTEM "${LLVM_INCLUDE_DIRS};${CLANG_INCLUDE_DIRS}")
+#set(LLVM_INCLUDE_DIRS=
+include_directories(SYSTEM "/root/anaconda3/envs/llvm/include;/root/anaconda3/envs/llvm/include/clang")
+
 
 #===============================================================================
 # 2. LLVM-TUTOR BUILD CONFIGURATION
@@ -32,6 +36,8 @@ endif()
 # 3. ADD THE TARGET
 #===============================================================================
 add_library(HelloWorld SHARED HelloWorld.cpp)
+add_library(LACommenter SHARED LACommenter.cpp)
+add_library(StdOutRemover SHARED StdOutRemover.cpp)
 
 # Allow undefined symbols in shared objects on Darwin (this is the default
 # behaviour on Linux)

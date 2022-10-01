@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/github/clang-tutor/HelloWorld",
+  "command": "/usr/bin/clang++-8 -DHelloWorld_EXPORTS -isystem /usr/lib/llvm-8/include -D_GLIBCXX_USE_CXX11_ABI=1 -fPIC -o CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o -c /home/github/clang-tutor/HelloWorld/HelloWorld.cpp",
+  "file": "/home/github/clang-tutor/HelloWorld/HelloWorld.cpp"
+},
+{
+  "directory": "/home/github/clang-tutor/HelloWorld",
+  "command": "/usr/bin/clang++-8 -DLACommenter_EXPORTS -isystem /usr/lib/llvm-8/include -D_GLIBCXX_USE_CXX11_ABI=1 -fPIC -o CMakeFiles/LACommenter.dir/LACommenter.cpp.o -c /home/github/clang-tutor/HelloWorld/LACommenter.cpp",
+  "file": "/home/github/clang-tutor/HelloWorld/LACommenter.cpp"
+},
+{
+  "directory": "/home/github/clang-tutor/HelloWorld",
+  "command": "/usr/bin/clang++-8 -DStdOutRemover_EXPORTS -isystem /usr/lib/llvm-8/include -D_GLIBCXX_USE_CXX11_ABI=1 -fPIC -o CMakeFiles/StdOutRemover.dir/StdOutRemover.cpp.o -c /home/github/clang-tutor/HelloWorld/StdOutRemover.cpp",
+  "file": "/home/github/clang-tutor/HelloWorld/StdOutRemover.cpp"
+}
+]
